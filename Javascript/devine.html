@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devine</title>
+</head>
+
+<script type="text/javascript">
+    function init(){
+        // retourne une valeur  comprise entre 0 et 10 
+     
+        rnd= Math.floor(Math.random()*11); 
+        
+            }
+    function controle( vl ){
+
+        if (isNaN(vl)){
+            alert("Farceur");
+        }
+        else {
+            if (Number(vl)==rnd){ alert("Gangné"); }
+            if (Number(vl)>rnd){ alert("C'est moins"); }
+            if (Number(vl)<rnd){ alert("C'est  Plus"); }
+        }
+
+    }
+</script>
+<body onload="init()">
+
+    <form  onsubmit=" return false;" >
+
+        <input type="text"  placeholder="Tapez une valeur" onchange="controle(this.value)">
+    </form>
+</body>
+</html>

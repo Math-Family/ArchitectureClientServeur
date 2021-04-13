@@ -1,0 +1,25 @@
+1:  Type 
+
+2:
+Qu’affichent les instructions suivantes ?
+add(3,2)     // Affiche  5
+add(3,"2")    //  Affiche   32
+var s ; add(3,s)   //   NaN
+s=2 ; add(3,s)   // Affiche  5 
+s="hello" ; add(3,s)    // Affiche   3hello
+
+3:  
+    function toNumber(x){
+    
+        return isNaN(x)? false: true;
+    }
+4:
+
+    function( x, y ){
+
+        if (Number(x)==NaN || Number(y)==NaN){
+            return NaN;
+        }
+        else
+         return add()
+    }
